@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><i></i>EDITABLE RESUME BUILDER</i></h1>
+    
+    <form id="resume-form" onsubmit="displayResume(event)">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+            
+            <label for="email-address">Email:</label>
+            <input type="email" id="email-address" name="email" required><br>
+            
+            <label for="phone-number">Phone:</label>
+            <input type="tel" id="phone-number" name="phone" required><br>
+            
+            <label for="home-address">Address:</label>
+            <input type="text" id="home-address" name="address" required><br>
+
+            <label for="profile-image">Profile Picture:</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*"><br>
+        </fieldset>
+        
+        <!-- Education Section -->
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+        </fieldset>
+        
+        <!-- Experience Section -->
+        <fieldset>
+            <legend>Experience</legend>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+        
+        <!-- Skills Section -->
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+        </fieldset>
+        
+        <button type="submit"> Generate Resume</button>
+    </form>
+    
+    <!-- Displayed Resume -->
+    <section id="output-section" style="display: none;">
+        <h2>Your Resume</h2>
+        <div id="resume-display">
+            <div id="header">
+                <img id="output-image" src="" alt="Profile Picture" style="display: none;">
+                <h3 id="name-display"></h3>
+            </div>
+            <p><strong>Email:</strong> <span id="email-display"></span></p>
+            <p><strong>Phone:</strong> <span id="phone-display"></span></p>
+            <p><strong>Address:</strong> <span id="address-display"></span></p>
+            
+            <h4>Education</h4>
+            <p id="education-display"></p>
+            
+            <h4>Experience</h4>
+            <p id="experience-display"></p>
+            
+            <h4>Skills</h4>
+            <p id="skills-display"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

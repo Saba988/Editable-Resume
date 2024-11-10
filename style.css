@@ -1,0 +1,95 @@
+/* Basic styling for layout */
+body {
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    background-color: whitesmoke;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    color: lightslategray;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:rgb(255, 243, 219);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border-color:2px solid rgba(26, 173, 184, 0.937);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: floralwhite;
+}
+
+legend {
+    font-weight: bold;
+    text-align:left;
+    
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #080808;
+}
+
+input, textarea {
+    width:calc(100% - 1px);
+    padding:8px;
+    margin-top: 4px;
+    border:1px solid rgb(21, 179, 179);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(252, 211, 161);
+    color:#2c3e50;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+button:hover {
+    background-color: rgb(226, 182, 124);
+}
+
+#output-section {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:rgb(226, 182, 124);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#output-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgb(247, 221, 188);
+}
+
